@@ -66,7 +66,11 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+
         return  User::create([
+
+        return User::create([
+
             'first_name' => $data['first_name'],
             'last_name' => $data['last_name'],
             'username' => $data['username'],
@@ -76,18 +80,3 @@ class RegisterController extends Controller
 
         ]);
     }
-
-     protected function update(array $data)
-    {
-        return  User::create([
-            'first_name' => $data['first_name'],
-            'last_name' => $data['last_name'],
-            'username' => $data['username'],
-            'password' => bcrypt($data['password']),
-            'email' => $data['email'],
-            'gender' => $data['gender'],
-
-        ]);
-    }
-
-}

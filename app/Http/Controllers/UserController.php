@@ -11,7 +11,6 @@ use App\Http\Requests\UserRequest;
 use App\Http\Requests\EditRequest;
 Use paginate;
 use Session;
-
 class UserController extends Controller
 {
     /**
